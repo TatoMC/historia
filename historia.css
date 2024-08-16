@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.5em;}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: red;
+}
+button:hover{
+    background-color: rgb(168, 28, 28);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{
+    color: red;
+}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: red;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: red;
+}
+#prueba .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p1 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p2 .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+#p3 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p4 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p5 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p6 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+#p6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+#p6 button{
+    font-size: 3vw;
+}
+#p7 .container{
+    text-align: center;
+    padding: 30px 12px;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    header h1{
+        font-size: 5em;
+    }
+    #prueba .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #prueba .probar h3{
+        margin-top: 0px;
+    }
+    #prueba .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/stich-esperando.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+    #prueba .probar{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #p1 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p1 .txt p{
+        margin-top: 0px;
+    }
+    #p1 .img1{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/stich-banca.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+    #p1 .txt{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #p3 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p3 .txt3 p{
+        margin-top: 0px;
+    }
+    #p3 .imag3{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/primer-beso.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+    #p3 .txt3{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #p4 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p4 .txt4 p{
+        margin-top: 0px;
+    }
+    #p4 .imag4{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/Dos-corazones.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+    #p4 .txt4{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #p5 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p5 .txt5 p{
+        margin-top: 0px;
+    }
+    #p5 .imag5{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/mejor-version.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 60%;
+    }
+    #p5 .txt5{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #p6 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p6 .txt6 p{
+        margin-top: 0px;
+    }
+    #p7 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #p7 .txt7 p{
+        margin-top: 0px;
+    }
+    #p7 .imag7{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/manita.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+    #p7 .txt7{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
+}
